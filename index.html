@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simon Genius</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+		body{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			font-family: 'Slabo 27px', serif;
+		}
+
+		#load{
+			width: 100vw;
+			height: 100vh;
+			background-color:red;
+			position: relative;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			-webkit-animation-name: geniusColors;
+			-webkit-animation-duration:20s;
+			-webkit-animation-iteration-count: infinite;
+			animation-name: geniusColors;
+			animation-duration:20s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease;
+		}
+
+		@-webkit-keyframes geniusColors {
+			0%   {background-color:red;}
+			25%  {background-color:yellow;}
+			50%  {background-color:green;}
+			75%  {background-color:blue;}
+			100% {background-color:red;}
+		}
+		@keyframes geniusColors {
+			0%   {background-color:red;}
+			25%  {background-color:yellow;}
+			50%  {background-color:green;}
+			75%  {background-color:blue;}
+			100% {background-color:red;}
+		}
+
+		#loadingContent{
+			display: flex;
+			font-size: 7em;
+			color: white;
+		}
+
+		#difficulty, #youLose, #youWon	{
+			display: none;
+		}
+	</style>
+	<script>
+		window.onload = setTimeout(function(){
+			document.getElementById('loadingContent').style.display = "none";
+			document.getElementById('difficulty').style.display = "flex";
+		},3000);
+	</script>
+</head>
+<body id="body">
+	<div id="load">
+		<div id="loadingContent">
+			<H1>Simon Genius</H1>
+		</div>
+
+		<div id="difficulty">
+			<h2 id="difficultyText">Dificuldade</h2>
+			<button id="easy" value="0" name="difficultyBtn">Fácil</button>
+			<button id="normal" value="1" name="difficultyBtn">Normal</button>
+			<button id="hard" value="2" name="difficultyBtn">Difícil</button>
+		</div>
+
+		<div id="youLose">
+			<H1 id="youLoseText">Você perdeu!</H1>
+			<div id="youLoseButtons">
+				<button id="youLoseBack">Voltar</button>
+			</div>
+		</div>
+
+		<div id="youWon">
+			<H1 id="youWonMainText">Parabéns!</H1>
+			<h2 id="youWonSubText">Você ganhou</h2>
+			<button id="backWin">Voltar</button>
+		</div>
+	</div>
+
+	<div id="content">
+		<nav id="nav">
+			<button id="navBack">Voltar</button>
+		</nav>
+
+		<aside id="aside">
+			<div class="asideInfo">
+				<h3 id="round">Round:</h3>
+				<h3 id="roundNumber"></h3>
+			</div>
+
+			<div class="asideInfo">
+				<h3 id="modeInfo">Dificuldade: </h3>
+				<h3 id="modeInfoDifficulty"></h3>
+			</div>
+
+			<div class="asideInfo">
+				<h3 id= timer>Tempo: </h3>
+				<h3 id="timerNumber"></h3>
+			</div>
+		</aside>
+
+		<section id="section">
+			<div class="lineUp line">
+				<button id="btn0" class="button yellow" value="0"></button>
+				<button id="btn1" class="button red " value="1"></button>
+			</div>
+
+			<div class="lineDown line">
+				<button id="btn2" class="button green" value="2"></button>
+				<button id="btn3" class="button blue" value="3"></button>
+			</div>
+		</section>
+
+		<footer id="footer">
+		</footer>
+		<script src="genius.js" type="text/javascript" charset="utf-8" async defer></script>
+		<link rel="stylesheet" href="default.css">
+		<link rel="stylesheet" href="screens.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+@media screen and (min-width: 2050px){
+    #difficulty button{
+        height: 60%;
+        font-size: 2.5em;
+    }
+    #difficulty h2{
+        font-size: 3.5em;
+    }
+    #navBack{
+        font-size: 2.5em;
+    }
+    #round, #modeInfo,#timer{
+        font-size: 2.5em;
+    }
+    #roundNumber, #modeInfoDifficulty,#timerNumber{
+        font-size: 3.5em;
+    }
+    #youLose button, #youWon button{
+        font-size: 0.45em;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1800px){
+    #difficulty{
+        width: 25%;
+    }
+    #difficulty button{
+        height: 60%;
+        font-size: 1.8em;
+    }
+    #difficulty h2{
+        font-size: 2.5em;
+    }
+    #navBack{
+        font-size: 2em;
+    }
+    #round, #modeInfo,#timer{
+        font-size: 2em;
+    }
+    #roundNumber, #modeInfoDifficulty,#timerNumber{
+        font-size: 3em;
+    }
+    #youLose button, #youWon button{
+        font-size: 0.35em;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1400px){
+    #difficulty{
+        width: 25%;
+    }
+    #difficulty button{
+        height: 60%;
+        font-size: 1.8em;
+    }
+    #difficulty h2{
+        font-size: 2.5em;
+    }
+    #navBack{
+        font-size: 1.8em;
+    }
+    #round, #modeInfo,#timer{
+        font-size: 1.8em;
+    }
+    #roundNumber, #modeInfoDifficulty,#timerNumber{
+        font-size: 2.8em;
+    }
+    #youLose button, #youWon button{
+        font-size: 0.35em;
+        width: 35%;
+    }
+    #youLose, #youWon{
+        font-size: 5em;
+    }
+}
+@media screen and (max-width: 1200px){
+    #difficulty{
+        width: 25%;
+    }
+    #difficulty button{
+        height: 40%;
+        font-size: 1.5em;
+    }
+    #difficulty h2{
+        font-size: 2.0em;
+    }
+    #navBack{
+        font-size: 1.5em;
+        width: 18%;
+    }
+    #round, #modeInfo,#timer{
+        font-size: 1.5em;
+    }
+    #roundNumber, #modeInfoDifficulty,#timerNumber{
+        font-size: 2.3em;
+    }
+    #youLose button, #youWon button{
+        font-size: 0.35em;
+        width: 30%;
+    }
+    #youLose, #youWon{
+        font-size: 4em;
+    }
+    .button{
+        width: 20vw;
+	    height: 20vw;
+    }
+}
+@media screen and (max-width: 900px){
+    #difficulty{
+        width: 50%;
+    }
+    #difficulty button{
+        height: 40%;
+        font-size: 2em;
+    }
+    #difficulty h2{
+        font-size: 2.5em;
+    }
+    #navBack{
+        font-size: 1.8em;
+        width: 30%;
+        height: 50%;
+        margin: auto;
+    }
+    #content{
+        grid-template-areas:
+        "nav nav nav nav nav"
+        "section section section section section"
+        "aside aside aside aside aside"
+        "footer footer footer footer footer";
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: 10vh auto 15vh 1vh;
+    }
+    #aside{
+        flex-direction: row;
+    }
+    #round, #modeInfo,#timer{
+        margin: 10% auto;
+        font-size: 1.5em;
+    }
+    #roundNumber, #modeInfoDifficulty,#timerNumber{
+        font-size: 2.3em;
+    }
+    #youLose button, #youWon button{
+        font-size: 0.6em;
+        width: 50%;
+    }
+    #youLose, #youWon{
+        font-size: 3em;
+    }
+    .button{
+        width: 30vw;
+	    height: 30vw;
+    }
+}
+@media screen and (max-width: 900px){
+    #difficulty{
+        width: 80%;
+    }
+    #difficulty button{
+        height: 30%;
+        font-size: 1.8em;
+    }
+    #difficulty h2{
+        font-size: 2.5em;
+    }
+    #navBack{
+        font-size: 1.6em;
+        width: 50%;
+        height: 60%;
+        margin: auto;
+    }
+    #content{
+        grid-template-areas:
+        "nav nav nav nav nav"
+        "section section section section section"
+        "aside aside aside aside aside"
+        "footer footer footer footer footer";
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: 10vh auto 15vh 1vh;
+    }
+    #aside{
+        flex-direction: row;
+    }
+    #round, #modeInfo,#timer{
+        margin: 10% auto;
+        font-size: 1.3em;
+    }
+    #roundNumber, #modeInfoDifficulty,#timerNumber{
+        font-size: 1.8em;
+    }
+    #youLose button, #youWon button{
+        font-size: 0.9em;
+        width: 60%;
+    }
+    #youLose, #youWon{
+        font-size: 2em;
+    }
+    .button{
+        width: 40vw;
+	    height: 40vw;
+    }
+}
+
