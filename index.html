@@ -58,14 +58,24 @@
 		#difficulty, #youLose, #youWon	{
 			display: none;
 		}
+
+		@media screen and (max-width: 1440px){#loadingContent{font-size: 5em;}}
+		@media screen and (max-width: 1200px){#loadingContent{font-size: 4em;}}
+		@media screen and (max-width: 900px){#loadingContent{font-size: 3em;}}
+		@media screen and (max-width: 500px){#loadingContent{font-size: 2em;}}
+		@media screen and (max-width: 400px){#loadingContent{font-size: 1.8em;}}
+		@media screen and (max-width: 350px){#loadingContent{font-size: 1.6em;}}
+
+
 	</style>
 	<script>
 		window.onload = setTimeout(function(){
 			document.getElementById('loadingContent').style.display = "none";
 			document.getElementById('difficulty').style.display = "flex";
-		},3000);
+		},20000);
 	</script>
 </head>
+
 <body id="body">
 	<div id="load">
 		<div id="loadingContent">
@@ -129,6 +139,7 @@
 
 		<footer id="footer">
 		</footer>
+
 		<script src="genius.js" type="text/javascript" charset="utf-8" async defer></script>
 		<link rel="stylesheet" href="default.css">
 		<link rel="stylesheet" href="screens.css">
