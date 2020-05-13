@@ -106,10 +106,12 @@ function start(){
 	for(var i = 0; i<rounds;i++)
 		sequency += Math.floor(Math.random()*4);
 
+	round = 1
+
 	shineSequency();
 	timing();
-	document.getElementById('roundNumber').innerHTML = 0
-	document.getElementById('modeInfoDifficulty').innerHTML = modeInfo
+	document.getElementById('roundNumber').innerHTML = round;
+	document.getElementById('modeInfoDifficulty').innerHTML = modeInfo;
 }
 
 function clean(){
