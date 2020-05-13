@@ -26,9 +26,10 @@ function verify(){
 				youLoseScreen();
 
 		if(playerClickedSequency.length==round){
-			if(playerClickedSequency == sequency){
+			if(playerClickedSequency == sequency)
 				youWonScreen();
-			}else if(round!=rounds){
+
+			if(round!=rounds){
 				setTimeout(function(){
 					for (var i = 3; i >= 0; i--){
 						blink(buttons[i], 600);
@@ -102,7 +103,7 @@ function start(){
 	}
 	fadeTime = difficultyTime/2;
 
-	for(var i = 0; i<rounds+4;i++)
+	for(var i = 0; i<rounds;i++)
 		sequency += Math.floor(Math.random()*4);
 
 	shineSequency();
@@ -184,8 +185,8 @@ function youLoseScreen(){
 function youWonScreen(){
 	clean();
 	document.getElementById('content').style.display = "none";
-	document.getElementById('youLose').style.display = "flex";
-	document.getElementById('youWon').style.display = "none";
+	document.getElementById('youLose').style.display = "none";
+	document.getElementById('youWon').style.display = "flex";
 	document.getElementById('load').style.display = "flex";
 	document.getElementById('difficulty').style.display = "none";
 }

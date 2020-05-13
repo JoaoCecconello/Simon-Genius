@@ -155,7 +155,7 @@
 	    height: 30vw;
     }
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 500px){
     #difficulty{
         width: 80%;
     }
@@ -163,26 +163,11 @@
         height: 30%;
         font-size: 1.8em;
     }
-    #difficulty h2{
-        font-size: 2.5em;
-    }
     #navBack{
         font-size: 1.6em;
         width: 50%;
         height: 60%;
         margin: auto;
-    }
-    #content{
-        grid-template-areas:
-        "nav nav nav nav nav"
-        "section section section section section"
-        "aside aside aside aside aside"
-        "footer footer footer footer footer";
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: 10vh auto 15vh 1vh;
-    }
-    #aside{
-        flex-direction: row;
     }
     #round, #modeInfo,#timer{
         margin: 10% auto;
@@ -196,11 +181,22 @@
         width: 60%;
     }
     #youLose, #youWon{
-        font-size: 2em;
+        font-size: 1.6em;
     }
     .button{
         width: 40vw;
 	    height: 40vw;
     }
 }
+@media screen and (max-width: 350px){
+    #difficulty button{
+        height: 30%;
+        font-size: 1.6em;
+    }
+    #difficulty h2{
+        font-size: 2em;
+    }
+}
+
+
 
